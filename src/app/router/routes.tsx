@@ -2,9 +2,7 @@ import { Navigate } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import ExpensesPage from '../pages/ExpensesPage'
 import IncomePage from '../pages/IncomePage'
-// @ts-expect-error LoginPage is a JSX module without a declaration file.
 import LoginPage from '../pages/LoginPage'
-// @ts-expect-error LoginLayout is a JSX module without a declaration file.
 import LoginLayout from '../layouts/LoginLayout'
 
 const routes = [
@@ -19,12 +17,13 @@ const routes = [
   },
 
   {
-    path: '/auth',
+    path: '/login',
     element: <LoginLayout />,
     children: [
-      { path: 'login', element: <LoginPage /> },
+      { index: true, element: <LoginPage /> },
     ],
-  }
+  },
+  { path: '/auth/login', element: <Navigate to="/login" replace /> },
 ]
 
 export default routes
