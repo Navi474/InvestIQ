@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.logo{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 31px;
+  padding-left: 22px;
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+}
+.logo::before{
+  content: '';
+  position:absolute;
+  border-radius: 8px;
+  width: 33px;
+  height: 26px; 
+  background: #fb7c2f;
+  top: 6px;
+  left: 5px;
+  box-shadow: -6px -6px 0 #ffdac0;
+}
+.logoText {
+  position:relative;
+  z-index: 1;
+}
