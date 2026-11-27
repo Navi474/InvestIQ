@@ -1,0 +1,20 @@
+.googleBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 122px;
+  height: 40px;
+  border: none;
+  border-radius: 26px;
+  background-color: var(--input-bg);
+  box-shadow: var(--google-shadow);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.googleBtn:hover {
+  background-color: #ebedf5;
+}
