@@ -1,5 +1,3 @@
-import '../../../app/styles/variables.css'
-import '../../../app/styles/global.css'
 import bgBottom from '../../../shared/assets/bg-bottom.png'
 import { AuthForm } from '../../../features/auth-by-email'
 import { GoogleButton } from '../../../features/auth-by-google'
