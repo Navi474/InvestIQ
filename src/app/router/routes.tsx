@@ -22,8 +22,7 @@ const routes = [
     children: [
       { index: true, element: <LoginPage /> },
     ],
-  },
-  { path: '/auth/login', element: <Navigate to="/login" replace /> },
+  }
 ]
 
 export default routes
